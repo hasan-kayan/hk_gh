@@ -6,8 +6,8 @@ from django.http import HttpResponse # This is the line that was added
 
  # This line allows us to render the index.html file and return it to the user 
     # at this part we give the path to the index.html file and the request object
-def about(request):
-    return render(request, "CV/base.html")
+def portfolio(request):
+    return render(request, "CV/portfolio.html")
 
 
 
