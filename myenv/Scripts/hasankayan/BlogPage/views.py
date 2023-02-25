@@ -9,3 +9,5 @@ from django.http import HttpResponse # This is the line that was added
 def about(request):
     return render(request, "blog/base.html")
 
+def myblog(request):
+    return render(request, "blog/myblog.html")
