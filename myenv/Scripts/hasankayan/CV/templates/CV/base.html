@@ -1,0 +1,29 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Blog</title>
+    <link rel="stylesheet" href="{% static 'blog/base.css' %}">
+  </head>
+  <body>
+    <header>
+      <h1>Hasan Kayan</h1>
+      <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:8000/">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="http://127.0.0.1:8000/myblog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+  
+        {% block content %}
+
+        {% endblock content %}
+        
+    <footer>
+      <p> HASAN KAYAN</p>
+    </footer>
+  </body>
+</html>
