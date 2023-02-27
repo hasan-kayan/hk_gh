@@ -1,6 +1,206 @@
 {% extends "blog/base.html" %}
+{%load static %}
 
 {% block content %}
-<h1>Hello My Name is HASAN</h1>
+<div id="header">
+    <div class="circle">
+      <h2>Hasan KAYAN</h2>
+      
+    </div>
+    <h1>Software and Hardware Developer</h1>
+    <p>A young engineer who wants to progress by constantly working.</p>
+  </div>
+  <div id="contact">
+    <div class="left">
+      <h2>Contact Information</h2>
+      <p>123 Main Street<br>Anytown, USA 12345</p>
+      <p>(123) 456-7890<br>john.doe@email.com</p>
+    </div>
+    <div class="right">
+      <h2>Social Media</h2>
+      <div class="social">
+        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="github.png" alt="GitHub"></a>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>PHP</li>
+      <li>MySQL</li>
+      <li>Responsive Design</li>
+    </ul>
+  </div>
+  <div id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <h3>Web Developer</h3>
+        <p>XYZ Company</p>
+        <p>June 2015 - Present</p>
+        <ul>
+          <li>Developed and maintained company website</li>
+          <li>Designed and implemented new features and functionality</li>
+          <li>Ensured website was fully responsive and mobile-friendly</li>
+          <li>Worked closely with team members to achieve project goals</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Junior Web Developer</h3>
+        <p>ABC Company</p>
+        <p>January 2014 - May 2015</p>
+        <ul>
+          <li>Assisted senior developers with website development tasks</li>
+          <li>Developed and maintained company intranet site</li>
+          <li>Helped implement responsive design for company website</li>
+          <li>Worked on various projects to gain experience and knowledge</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p>University of Anytown</p>
+        <p>Graduated May 2014</p>
+      </li>
+    </ul>
+  </div>
 
+<style>
+body {
+        background-color: #fff2cc;
+        font-family: Arial, sans-serif;
+      }
+      #header {
+        background-color: #013f11;
+        color: #fff;
+        padding: 30px;
+        text-align: center;
+      }
+      #header h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+      #header p {
+        margin: 0;
+        font-size: 18px;
+      }
+      #contact {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+      }
+      #contact h2 {
+        margin-top: 0;
+        font-size: 24px;
+        color: #013f11;
+      }
+      #contact p {
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+      #skills {
+        background-color: #fff;
+        padding: 20px;
+        border-bottom: 1px solid #d9d9d9;
+      }
+      #skills h2 {
+        margin-top: 0;
+        font-size: 24px;
+        color:#013f11;
+      }
+      #skills ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #skills li {
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+      #experience {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-bottom: 1px solid #d9d9d9;
+      }
+      #experience h2 {
+        margin-top: 0;
+        font-size: 24px;
+        color: #013f11;
+      }
+      #experience ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #experience li {
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+      #education {
+        background-color: #fff;
+        padding: 20px;
+      }
+      #education h2 {
+        margin-top: 0;
+        font-size: 24px;
+        color: #412b13;
+      }
+      #education ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #education li {
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+      .clearfix {
+        clear: both;
+      }
+      .left {
+        float: left;
+        width: 50%;
+      }
+      .right {
+        float: right;
+        width: 50%;
+      }
+      .circle {
+        width: 150px;
+        height: 150px;
+        background-color:  #412b13;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+      .circle h2 {
+        margin-top: 0;
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+        padding-top: 30px;
+      }
+      .social {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .social a {
+        display: inline-block;
+        margin-right: 10px;
+        width: 40px;
+      }
+
+
+</style>
 {% endblock content %}
