@@ -13,16 +13,16 @@
   <div id="contact">
     <div class="left">
       <h2>Contact Information</h2>
-      <p>123 Main Street<br>Anytown, USA 12345</p>
-      <p>(123) 456-7890<br>john.doe@email.com</p>
+      <p>Ankara/Turkey</p>
+      <p>hasankayan.formal@gmail.com</p>
     </div>
     <div class="right">
       <h2>Social Media</h2>
       <div class="social">
-        <a href="#"><img src="facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
-        <a href="#"><img src="github.png" alt="GitHub"></a>
+        <a href="https://github.com/hasan-kayan"><img src="{% static 'blog/img/github.png'%}" alt="GitHub" height="50" width="60"></a>
+        <a href="https://www.linkedin.com/in/hasan-kayan-37a59319b/"><img src="{% static 'blog/img/linkedin.png'%}" alt="LinkedIn" height="50" width="60"></a>
+        <a href="https://medium.com/@hasankayan"><img src="{% static 'blog/img/medium.png '%}" alt="Medium" height="50" width="60"></a>
+
       </div>
     </div>
     <div class="clearfix"></div>
@@ -30,12 +30,13 @@
   <div id="skills">
     <h2>Skills</h2>
     <ul>
+        <li>Python</li>
+        <li>Golang</li>
+        <li>C/C++</li>
       <li>HTML</li>
       <li>CSS</li>
       <li>JavaScript</li>
-      <li>PHP</li>
-      <li>MySQL</li>
-      <li>Responsive Design</li>
+
     </ul>
   </div>
   <div id="experience">
@@ -174,6 +175,7 @@ body {
         width: 50%;
       }
       .right {
+        object-fit: cover;
         float: right;
         width: 50%;
       }
