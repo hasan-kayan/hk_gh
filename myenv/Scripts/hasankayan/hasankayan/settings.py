@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-
+import socket 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -136,9 +136,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # ... other settings ...
 
 # Email settings
+socket.getaddrinfo('hasankayan.net', 80) 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'your-smtp-server-address'
-EMAIL_PORT = 587  # or whatever port your SMTP server uses
+EMAIL_PORT = 80  # or whatever port your SMTP server uses
 EMAIL_USE_TLS = True  # or False if your SMTP server doesn't require TLS
 EMAIL_HOST_USER = 'your-smtp-server-username'
 EMAIL_HOST_PASSWORD = 'your-smtp-server-password'
