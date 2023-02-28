@@ -2,6 +2,66 @@
 {%load static %}
 
 {% block content %}
-    
+<main>
+    <section>
+        <h2>Project 1</h2>
+        <div class="project">
+            <img src="project1.png" alt="Project 1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt tortor sed metus laoreet fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Vestibulum blandit, sapien at convallis fermentum, elit ex auctor elit, vel maximus risus elit eget velit. Fusce faucibus, lectus sed vestibulum varius, sapien dolor ullamcorper tellus, ac tincidunt justo enim vitae purus. Etiam ac odio vel purus semper consectetur id id ex.</p>
+            <button><a href="#">View Project</a></button>
+        </div>
+    </section>
+    <section>
+        <h2>Project 2</h2>
+        <div class="project">
+            <img src="project2.png" alt="Project 2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt tortor sed metus laoreet fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Vestibulum blandit, sapien at convallis fermentum, elit ex auctor elit, vel maximus risus elit eget velit. Fusce faucibus, lectus sed vestibulum varius, sapien dolor ullamcorper tellus, ac tincidunt justo enim vitae purus. Etiam ac odio vel purus semper consectetur id id ex.</p>
+            <button><a href="#">View Project</a></button>
+        </div>
+    </section>
+</main>
+
+<style>
+
+    nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+    }
+
+    nav li {
+        margin-right: 20px;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    section {
+        margin-bottom: 40px;
+    }
+
+    .project {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .project img {
+        max-width: 50%;
+        margin-right
+    }
+
+</style>
+
+
 
 {% endblock content %}
