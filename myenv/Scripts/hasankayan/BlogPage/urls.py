@@ -4,7 +4,9 @@ from . import views # This is the line that was added (the dot means the current
 
 urlpatterns = [
   
-    path("about", views.about),
     path("myblog", views.myblog),
+    path("http", views.http),
+    path("internet", views.internet),
+    
  
 ]

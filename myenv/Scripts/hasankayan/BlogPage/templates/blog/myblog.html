@@ -1,97 +1,132 @@
 {% extends "blog/base.html" %}
+{% load static %}
 
 {% block content %}
+<main>
+  <h2>Welcome to My Blog Page</h2>
+  <p>You can read my latest articles here.</p>
+    
+  <div class="pencere-row">
+    <div class="pencere-col">
+      <a href="/http">
+        <div class="pencere">
+          <img src="{%static 'project/demo3.jpg'%}" alt="Image 1">
+          <div class="pencere-content">
+            <h3>What is HTTP ?</h3>
+            
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 
+  <div class="pencere-row">
+    <div class="pencere-col">
+      <a href="/tai">
+        <div class="pencere">
+          <img src="{%static 'project/tai.png'%}" alt="Image 1">
+          <div class="pencere-content">
+            <h3>What is Internet</h3>
+            
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>
 
-  <main>
-    <article>
-      <header>
-        <h2>My First Blog Post</h2>
-        <p>Published on January 1, 2023</p>
-      </header>
-      <section>
-        
-      </section>
-      <footer>
-        <a href="">Read more...</a>
-      </footer>
-    </article>
-    <article>
-      <header>
-        <h2>My Second Blog Post</h2>
-        <p>Published on February 1, 2023</p>
-      </header>
-      <section>
-       
-      </section>
-      <footer>
-        <a href="blog-post2.html">Read more...</a>
-      </footer>
-    </article>
-    <article>
-      <header>
-        <h2>My Third Blog Post</h2>
-        <p>Published on March 1, 2023</p>
-      </header>
-      <section>
+<style>
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
 
-        <style>
-          /* Set default styles for all elements */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  h2 {
+    font-size: 36px;
+    margin-bottom: px;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #666;
+  }
+
+  a {
+    color: #008080;
+    text-decoration: none;
+    border-bottom: 1px dotted #008080;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: #005757;
+    border-bottom: 1px dotted #005757;
+  }
+
+  .pencere-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .pencere-col {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .pencere {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .pencere img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .pencere-content {
+    text-align: center;
+  }
+
+  .pencere h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .pencere p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+
+  .pencere:hover {
+    transform: scale(1.05);
+  }
+  /* Style the images to fit within their containers */
+  img {
+  max-width: 70%;
+  height: auto;
 }
 
-/* Style the body and main section */
-body {
-  font-family: Arial, sans-serif;
-}
 
-main {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
+</style>
 
-/* Style each article */
-article {
-  margin-bottom: 40px;
-}
-
-/* Style the headers */
-article header {
-  margin-bottom: 10px;
-}
-
-article header h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-article header p {
-  font-size: 14px;
-  color: #888;
-}
-
-/* Style the footer */
-article footer {
-  text-align: right;
-  margin-top: 10px;
-}
-
-article footer a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  border-bottom: 1px solid #333;
-}
-
-article footer a:hover {
-  color: #666;
-  border-color: #666;
-}
- </style>
-        
-            {% endblock content %}
+{% endblock %}
