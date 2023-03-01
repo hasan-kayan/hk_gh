@@ -13,3 +13,5 @@ def internet(request):
     return render(request, "blog/internet.html")
 def http(request):
     return render(request, "blog/http.html")
+def myblog(request):
+    return render(request, "blog/myblog.html")
