@@ -5,29 +5,29 @@
 <main>
   <h2>Welcome to My Project Page</h2>
   <p>You can see my current projects.</p>
-  
+    
   <div class="pencere-row">
     <div class="pencere-col">
-      <a href="/portfolio">
+      <a href="/hirob">
         <div class="pencere">
-          <img src="{% static 'blog/img/portfolio.png '%}" alt="Resim 1">
+          <img src="{%static 'project/demo3.jpg'%}" alt="Image 1">
           <div class="pencere-content">
-            <h3>My Portfolio</h3>
-            <p>Check here for my resume and more.</p>
+            <h3>Hi-Rob</h3>
+            <p>Check here for project presentation</p>
           </div>
         </div>
       </a>
     </div>
   </div>
-  
+
   <div class="pencere-row">
     <div class="pencere-col">
-      <a href="/projects">
+      <a href="/tai">
         <div class="pencere">
-          <img src="{% static 'blog/img/projects.png '%}" alt="Resim 2">
+          <img src="{%static 'project/tai.png'%}" alt="Image 1">
           <div class="pencere-content">
-            <h3>My Projects</h3>
-            <p>Check here for my current and completed projects. I will publish my projects step by step with open source.</p>
+            <h3>TAI-LIFTUP</h3>
+            <p>Check here for project presentation.</p>
           </div>
         </div>
       </a>
@@ -120,6 +120,13 @@
   .pencere:hover {
     transform: scale(1.05);
   }
+  /* Style the images to fit within their containers */
+  img {
+  max-width: 70%;
+  height: auto;
+}
+
+
 </style>
 
 {% endblock %}

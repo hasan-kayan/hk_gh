@@ -9,5 +9,7 @@ from django.http import HttpResponse # This is the line that was added
 def projects(request):
     return render(request, "projects/projects.html")
 
-
-    
+def tai(request):
+    return render(request, "projects/tai.html")
+def hirob(request):
+    return render(request, "projects/hirob.html")
