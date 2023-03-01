@@ -136,11 +136,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # ... other settings ...
 
 # Email settings
-socket.getaddrinfo('hasankayan.net', 80) 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'your-smtp-server-address'
-EMAIL_PORT = 80  # or whatever port your SMTP server uses
-EMAIL_USE_TLS = True  # or False if your SMTP server doesn't require TLS
-EMAIL_HOST_USER = 'your-smtp-server-username'
-EMAIL_HOST_PASSWORD = 'your-smtp-server-password'
-DEFAULT_FROM_EMAIL = 'your-default-from-email-address'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'hasankayan.formal@gmail.com'
+EMAIL_HOST_PASSWORD = '27051976hk'
