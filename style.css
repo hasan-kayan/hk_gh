@@ -1,0 +1,11 @@
+
+body {
+    background-color: bisque;
+}
+header {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 10%;
+    height: 10%;
+}
