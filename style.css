@@ -52,8 +52,8 @@ header {
     color: #f1f1f1;
 }
 .Hello {
-    font-size: large;
-    color: black;
+    font-size: 20px;
+    color: #581417;
     padding: 20px;
     border-radius: 5px;
     margin-top : 60px;
