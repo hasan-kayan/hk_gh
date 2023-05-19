@@ -52,7 +52,7 @@ header {
     color: #f1f1f1;
 }
 .Hello {
-    background-color: white;
+    font-size: large;
     color: black;
     padding: 20px;
     border-radius: 5px;
