@@ -11,10 +11,12 @@ header {
 nav {
     font-size: large;
     font-style: normal;
+    font-weight: bold;
     position: absolute;
     left: 200px;
-    top: 100px;
-    width: 400px;
-    height: 200px;
+    top: 50px;
+    width: 600px;
+    height: 400px;
+    
   
 }
