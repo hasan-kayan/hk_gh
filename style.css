@@ -1,6 +1,15 @@
-body {
-    background-image: url("images/backgroundimage.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
+
+.box {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    padding: 20px;
+    transition: transform 0.3s;
+    text-align: center;
+    
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
