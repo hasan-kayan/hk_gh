@@ -72,7 +72,7 @@ header {
     color: white;
     text-align: center;
     line-height: 100px;
-    margin: 10px;
+    margin: 10px 100px;
     transition: background-color 0.3s ease;
     border-radius: 20%;
     display: inline-block; /* Positioned the boxes side by side */
@@ -90,7 +90,7 @@ header {
     color: white;
     text-align: center;
     line-height: 100px;
-    margin: 10px;
+    margin: 10px 100px;
     transition: background-color 0.3s ease;
     border-radius: 20%;
     display: inline-block; /* Positioned the boxes side by side */
