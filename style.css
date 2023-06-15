@@ -62,10 +62,33 @@ header {
 }
 
 .container {
-    display: inline-block; /* Added container to hold the boxes and positioned them side by side */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .box {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.box0 {
     width: 300px;
     height: 300px;
     background-color: rgba(35, 81, 165, 0.466);
@@ -74,12 +97,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 20px; /* Adjusted margin for increased spacing */
+    margin: 10px 20px;
     transition: background-color 0.3s ease;
     border-radius: 20%;
     display: inline-block;
 }
-.box:hover {
+
+.box0:hover {
     background-color: rgba(180, 90, 90, 0.514);
     cursor: pointer;
 }
@@ -93,11 +117,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 20px; /* Adjusted margin for increased spacing */
+    margin: 10px 20px;
     transition: background-color 0.3s ease;
     border-radius: 20%;
     display: inline-block;
 }
+
 .box2:hover {
     background-color: rgba(180, 90, 90, 0.514);
     cursor: pointer;
