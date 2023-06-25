@@ -1,9 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(101, 240, 250, 0.5),rgba(92, 4, 95, 0.5));
-    background-size: cover;
-    background-repeat: no-repeat;
+    
 }
 header {
     background-color: #053b25be;
