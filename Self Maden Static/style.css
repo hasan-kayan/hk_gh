@@ -65,4 +65,27 @@ header {
     font-weight: bold;
     margin-top: 5px;
   }
-  
+  .footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-images img {
+    width: 50px; /* Fotoğraf genişlikleri için istediğiniz değeri ayarlayın */
+    height: 40px; /* Fotoğraf yükseklikleri için istediğiniz değeri ayarlayın */
+    margin: 10px; /* Fotoğraflar arasındaki boşluğu istediğiniz değeri ayarlayın */
+  }
