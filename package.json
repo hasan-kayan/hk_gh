@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "rive-react": "^4.2.1"
+    "@rive-app/react-canvas": "^4.3.0"
   }
 }
