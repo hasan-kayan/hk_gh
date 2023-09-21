@@ -9,7 +9,7 @@
   
   .button-container {
     display: flex;
-    gap: 10px;
+    gap: 100px;
   }
   
   .custom-button {
