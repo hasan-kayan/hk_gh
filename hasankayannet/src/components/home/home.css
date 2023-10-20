@@ -1,6 +1,6 @@
 /* Home page styles */
 .home {
-    background-color: aqua;
+    background-color: rgb(3, 101, 101);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -24,18 +24,57 @@
     font-size: 18px;
     margin-bottom: 20px;
   }
-  
-  .hero button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+  .explain{
+    font-size: 18px;
+    margin-bottom: 20px;
   }
   
-  .hero button:hover {
-    background-color: #0056b3;
+  .explain h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    
   }
-  
+ /* home.css */
+.circular-image {
+  width: 250px; /* Adjust the width and height as needed */
+  height: 250px;
+  border-radius: 30%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fills the circular container */
+}
+/* YourComponent.module.css */
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Arranges boxes in a row with space between them */
+  flex-wrap: wrap; /* Allows wrapping to next line on small screens */
+}
+
+.box {
+  border-radius: 20%;
+  box-shadow: inset;
+  width: 30%; /* Adjust the width as needed for desktop view */
+  height: 150px; /* Set the height of the boxes */
+  border: 2px solid #000;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s; /* Adds a smooth transition for the hover effect */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stacks boxes in a column for small screens */
+  }
+
+  .box {
+      width: 100%; /* Adjust the width for mobile view */
+      margin-bottom: 10px; /* Adds spacing between stacked boxes */
+  }
+}
+
+/* Hover effect to make boxes bigger */
+.box:hover {
+  transform: scale(1.1);
+}
