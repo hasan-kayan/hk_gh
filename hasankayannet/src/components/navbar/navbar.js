@@ -1,15 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './navbar.css'; // Import your CSS file for styling
 
 function Navbar() {
   return (
     <nav className="navbar">
-      {/* Use Link components with customized paths */}
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/projects">Projects</Link>
-      <Link to="/contact">Contact</Link>
+      <div className="navbar-links">
+        <Link to="/" className="navbar-link">Home</Link>
+        <Link to="/about" className="navbar-link">About</Link>
+        <Link to="/projects" className="navbar-link">Projects</Link>
+        <Link to="/contact" className="navbar-link">Contact</Link>
+      </div>
     </nav>
   );
 }
