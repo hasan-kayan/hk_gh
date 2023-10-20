@@ -5,6 +5,7 @@ import './home.css'; // Import your CSS file for styling
 
 function Home() {
     return (
+  
       <div className="home">
         <div className="hero">
           <h1>Welcome to My Portfolio</h1>
@@ -13,6 +14,7 @@ function Home() {
         </div>
         {/* Add more sections and content here */}
       </div>
+ 
     );
   }
   

@@ -3,6 +3,7 @@ import './about.css'; // Import your CSS file for styling
 
 function AboutMe() {
   return (
+
     <div className="about-me">
       <h2>About Me</h2>
       <p>
@@ -39,6 +40,7 @@ function AboutMe() {
         <button className="download-button">Download PDF Resume</button>
       </a>
     </div>
+ 
   );
 }
 
