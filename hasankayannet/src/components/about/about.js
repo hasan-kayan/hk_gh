@@ -36,7 +36,7 @@ function AboutMe() {
       </p>
 
       {/* Add a download button for the PDF file */}
-      <a href="/path-to-your-pdf-file.pdf" download>
+      <a href="./HasanKayan.pdf" download>
         <button className="download-button">Download PDF Resume</button>
       </a>
     </div>
