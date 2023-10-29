@@ -7,7 +7,7 @@ import Home from './components/Home/home';
 import Projects from './components/Projects/projects';
 import About from './components/About/about';
 import Contact from './components/Contact/contact';
-import NotFound from './components/notfound'; // Import the 404 component
+
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="/components/About/about" component={About} />
         <Route path="/components/Contact/contact" component={Contact} />
         {/* Add the 404 page as the last Route */}
-        <Route component={NotFound} />
+
       </Routes>
     </Router>
   );
