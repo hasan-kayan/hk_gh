@@ -8,6 +8,8 @@ import HomePage from './components/Home/Home';
 import About from './components/About/About'; // Create this component
 import Projects from './components/Projects/Projects'; // Create this component
 import Contact from './components/Contact/Contact'; // Create this component
+import ProjectDetail from './components/Projects/ProjectDetail';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:projectId" element={<ProjectDetail />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
