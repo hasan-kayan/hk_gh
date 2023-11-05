@@ -1,0 +1,24 @@
+/* src/components/HomePage.css */
+
+.homepage {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero {
+    margin-bottom: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  /* Continue styling other elements and responsive styles */
+  
