@@ -1,0 +1,38 @@
+/* src/components/ProjectBox.css */
+
+.project-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .project-box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-image {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 16px;
+  }
+  
+  .project-info h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .project-info p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
