@@ -19,6 +19,15 @@
     color: #666;
     margin-bottom: 2rem;
   }
-  
-  /* Continue styling other elements and responsive styles */
-  
+  /* HomePage.css */
+
+.profile-pic {
+  width: 200px; /* Increased size */
+  height: 200px; /* Increased size */
+  border-radius: 50%; /* This makes the image round */
+  border: 3px solid white; /* Optional: adds a border around the image */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  margin-top: 20px; /* Adjust spacing as needed */
+  margin-bottom: 20px; /* Ensures spacing below the image */
+}

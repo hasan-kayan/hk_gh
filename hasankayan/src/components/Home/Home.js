@@ -3,6 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './HomePage.css'; // Import your CSS styles
+import profilePic from './unnamed.jpg'; // Assuming your image is named 'profile.jpg'
+
 
 const HomePage = () => {
   // Function to generate dynamic greeting based on time of day
@@ -54,6 +56,18 @@ const HomePage = () => {
         >
           Full Stack Developer | Electronic Engineer | System Designer 
         </motion.p>
+        <motion.img
+            src={profilePic}
+            alt="Hasan Kayan"
+            className="profile-pic"
+            animate={{ rotate: 360 }}
+            transition={{
+              loop: Infinity,
+              ease: "linear",
+              duration: 2,
+            }}
+/>
+
       </motion.header>
 
       <section className="about-me">
