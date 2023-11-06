@@ -1,23 +1,37 @@
-/* src/components/About.css */
+/* About.css */
 
 .about-container {
-    padding: 20px;
-    text-align: center; /* Center the content */
-  }
-  
-  .download-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .download-button:hover {
-    background-color: #0056b3;
-  }
-      
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.about-container h1,
+.about-container h2 {
+  color: #333;
+}
+
+.about-container p,
+.about-container li {
+  color: #666;
+}
+
+.education, .skills, .experience {
+  margin-top: 20px;
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add more styles according to your preference */

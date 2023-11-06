@@ -71,11 +71,13 @@ const HomePage = () => {
       </motion.header>
 
       <section className="about-me">
-        {/* ... */}
+        Hi I am a dedicated Full Stack web developer who is also an enthusiastic for learning and improving personal skills. 
+        Here you can find my projects, CV, and a contact form to work together. 
+        You can also wisit my other profiles...
       </section>
 
       <section className="my-work">
-        {/* ... */}
+      
       </section>
 
       <section className="contact-me">
