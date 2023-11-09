@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
-const navVariants = {
-  hidden: { y: -50, opacity: 0 },
-  visible: { y: 0, opacity: 1, transition: { delay: 0.2, duration: 0.5 } },
-};
-
 const Navbar = () => {
+  const navVariants = {
+    hidden: { y: -50, opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { delay: 0.2, duration: 0.5 } },
+  };
+
   return (
     <motion.nav
       className="navbar"

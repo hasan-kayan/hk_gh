@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './HomePage.css'; // Import your CSS styles
 import profilePic from './unnamed.jpg'; // Assuming your image is named 'profile.jpg'
-
+import DesignWeb from './InteractiveDesign.png'; // Update this path if necessary
 
 const HomePage = () => {
   // Function to generate dynamic greeting based on time of day
@@ -28,8 +28,26 @@ const HomePage = () => {
     }
   };
 
+  const sectionVariants = {
+    offscreen: {
+      y: 50,
+      opacity: 0
+    },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        duration: 0.5
+      }
+    }
+  };
+
   return (
+    
     <motion.div 
+    
       className="homepage"
       initial="hidden"
       animate="visible"
@@ -66,23 +84,60 @@ const HomePage = () => {
               ease: "linear",
               duration: 2,
             }}
-/>
-
+        />
       </motion.header>
 
-      <section className="about-me">
-        Hi I am a dedicated Full Stack web developer who is also an enthusiastic for learning and improving personal skills. 
+      <motion.section
+        className="about-me"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+      >
+        Hi, I am a dedicated Full Stack web developer who is also an enthusiast for learning and improving personal skills. 
         Here you can find my projects, CV, and a contact form to work together. 
-        You can also wisit my other profiles...
-      </section>
+        You can also visit my other profiles...
+      </motion.section>
 
-      <section className="my-work">
-      
-      </section>
+      <motion.section
+        className="my-work"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+      >
+        <div className="my-work-content">
+          <img src={DesignWeb} alt="My Work" className="my-work-photo" />
+          <div className="my-work-text">
+            <h2>Projects and Experience</h2>
+            <p>
+              Here's a snapshot of my recent projects. I've worked on a range of technologies
+              from front-end frameworks like React to back-end systems using Node.js and Python.
+            </p>
+            {/* Add more text or elements as needed */}
+          </div>
+        </div>
+      </motion.section>
 
-      <section className="contact-me">
-        {/* ... */}
-      </section>
+      <motion.section
+        className="contact-me"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+      >
+        <div className="contact-content">
+          <div className="contact-text">
+            <h2>Get in Touch</h2>
+            <p>
+              Interested in collaborating or discussing a project? Feel free to reach out.
+              I'm always open to discussing new projects and creative ideas.
+            </p>
+            {/* Add more text or elements as needed */}
+          </div>
+          <img src={DesignWeb} alt="Contact" className="contact-photo" />
+        </div>
+      </motion.section>
 
       {/* Add more sections as needed */}
     </motion.div>
