@@ -10,16 +10,16 @@ const HomePage = () => {
     <div className="home-container">
       <h1>Here You Can Find My Profiles And Contact Me</h1>
       <div className="button-container">
-        <a href="https://www.youtube.com/" className="button youtube-button">
+        <a href="https://youtube.com/@HasanKayanS?si=726rNQ_JXV2JYx_e" className="button youtube-button">
           YouTube
         </a>
-        <a href="https://github.com/yourusername" className="button github-button">
+        <a href="https://github.com/hasan-kayan" className="button github-button">
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/yourprofile" className="button linkedin-button">
+        <a href="https://www.linkedin.com/in/hasan-kayan-37a59319b/" className="button linkedin-button">
           LinkedIn
         </a>
-        <a href="https://medium.com/@yourusername" className="button medium-button">
+        <a href="https://medium.com/@hasankayan" className="button medium-button">
           Medium
         </a>
         <button onClick={openMailTo} className="button email-button">
