@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import './HomePage.css'; // Import your CSS styles
 import profilePic from './unnamed.jpg'; // Assuming your image is named 'profile.jpg'
 import DesignWeb from './InteractiveDesign.png'; // Update this path if necessary
-
+import Together from './together.png'
 const HomePage = () => {
   // Function to generate dynamic greeting based on time of day
   const getGreeting = () => {
@@ -135,7 +135,7 @@ const HomePage = () => {
             </p>
             {/* Add more text or elements as needed */}
           </div>
-          <img src={DesignWeb} alt="Contact" className="contact-photo" />
+          <img src={Together} alt="Contact" className="contact-photo" />
         </div>
       </motion.section>
 
