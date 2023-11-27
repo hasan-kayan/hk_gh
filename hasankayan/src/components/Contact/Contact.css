@@ -1,4 +1,4 @@
-/* HomePage.css */
+/* Contact.css */
 
 .home-container {
   display: flex;
@@ -17,6 +17,9 @@
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -57,4 +60,9 @@
 
 .email-button:hover {
   background-color: #0056b3;
+}
+
+/* Adjust styling for FontAwesome icons within buttons */
+.button svg {
+  margin-right: 5px; /* Add some spacing between icon and text */
 }
