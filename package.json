@@ -12,6 +12,8 @@
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
         "aws-sdk": "^2.1488.0",
+        "axios": "^1.6.2",
+        "emailjs-com": "^3.2.0",
         "framer-motion": "^10.16.4",
         "fs": "^0.0.1-security",
         "react": "^18.2.0",

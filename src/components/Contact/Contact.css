@@ -66,3 +66,43 @@
 .button svg {
   margin-right: 5px; /* Add some spacing between icon and text */
 }
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+submit-button {
+  background-color: #28a745;
+  color: white;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
