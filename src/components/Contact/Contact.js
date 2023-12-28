@@ -22,7 +22,7 @@ const HomePage = () => {
     e.preventDefault();
 
     // Your server endpoint
-    const serverEndpoint = 'http://3.86.116.39:9000/send-email';
+    const serverEndpoint = 'REPLACE WITH YOUR ENDPOINT OF MAIL SERVICE';
 
     setLoading(true);
 
